@@ -1,0 +1,98 @@
+prog 01
+
+sum
+=SUM (C2:H2)
+
+average
+=I2/600*100
+
+
+Check Pass or Fail
+
+=IF(AND(C2>=35,D2>=35,E2>=35,F2>=35,G2>=35,H2>=35),”Pass”,”Fail”)
+
+find Grade
+=IF(AND(C2>=35,D2>=35,E2>=35,F2>=35,G2>=35,H2>=35),IF(J2>=75,”Distinction”,IF(J2>=65,”First Class”,IF(J2>=50,”Second Classs”,IF(J2>=35,”Third Class”)))),Fail”)
+
+
+**************program 04**************
+Goal Seek:
+
+=AVERAGE (B2:B6). 
+
+**************program 05**************
+left
+=LEFT(A2,4)
+
+RIGHT
+=RIGHT(A2,4)
+
+CLEAN
+=CLEAN(A2:A200)
+
+UPPER
+=UPPER(B2)
+
+LOWER
+=LOWER(B2)
+
+TRIM
+=TRIM(B2:A200)
+
+CONCATENATE
+=CONCATENATE(B2&"",B3)
+
+MAX
+=MAX(A2:200)
+
+MIN
+=MIN(A2:200)
+
+**************program 06**************
+
+DATEVALUE
+=DATEVALUE (“2024-02-05”)
+
+DATEADD
+=DATEADD(day, 7, ‘2024-02-05’)
+
+DATEDIF
+=DATEDIF(A1, B1, “d”)
+=DATEDIF(A1, B1, “M”)
+=DATEDIF(A1, B1, “Y”)
+
+
+TIMEVALUE
+=TIMEVALUE (“10:10 AM”)
+
+
+**************program 08**************
+
+Cell Referencing Between Sheets
+
+=SUM(Sheet1:Sheet3!A1))
+
+
+3D Formulas
+Example: =SUM (Sheet1:Sheet3!A1)
+Example: =SUM (Sheet1:Sheet3!A1)
+
+
+**************program 09**************
+
+Formulas for Calculations:
+Traveling Allowance (TA): =Basic Pay * 10%
+Dearness Allowance (DA): =Basic Pay * 8%
+House Rent Allowance (HRA): =Basic Pay * 15%
+Income Tax (IT): =Basic Pay * 5%
+Provident Fund (PF): =Basic Pay * 12%
+
+ Net Pay (NP): =Basic Pay + TA + DA + HRA - IT – PF
+
+
+**************program 10**************
+
+Cost After Discount: =MRP - (MRP * (Discount / 100))
+ 
+**************program 11**************
+

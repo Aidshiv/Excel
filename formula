@@ -1,14 +1,11 @@
-prog 01
-
+**********prog 01*****************
 sum
 =SUM (C2:H2)
 
 average
 =I2/600*100
 
-
 Check Pass or Fail
-
 =IF(AND(C2>=35,D2>=35,E2>=35,F2>=35,G2>=35,H2>=35),”Pass”,”Fail”)
 
 find Grade

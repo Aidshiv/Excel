@@ -48,26 +48,43 @@ MIN
 **************program 06**************
 
 DATEVALUE
+
+=IF(ISNUMBER(DATEVALUE(TEXT(C2, "dd-mm-yyyy"))), DATEVALUE(TEXT(C2, "dd-mm-yyyy")), "Invalid Date")
+
+
+
+
 =DATEVALUE (“2024-02-05”)
+
+
+
+=EDATE(C2, 3)
+
+
 
 DATEADD
 =DATEADD(day, 7, ‘2024-02-05’)
 
 DATEDIF
+
+
+=DATEDIF(B2, I2, "d")
 =DATEDIF(A1, B1, “d”)
 =DATEDIF(A1, B1, “M”)
 =DATEDIF(A1, B1, “Y”)
 
 
 TIMEVALUE
-=TIMEVALUE (“10:10 AM”)
-
+=TIMEVALUE(TEXT(D3, "hh:mm:ss"))
 
 **************program 08**************
 
 Cell Referencing Between Sheets
 
 =SUM(Sheet1:Sheet3!A1))
+
+
+=VLOOKUP(A3,Sheet2!A2:E12,2,FALSE)
 
 
 3D Formulas
@@ -93,3 +110,4 @@ Cost After Discount: =MRP - (MRP * (Discount / 100))
  
 **************program 11**************
 
+=SUMIF(H2:H11, "Home Décor", K2:K11)

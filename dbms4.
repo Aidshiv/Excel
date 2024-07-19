@@ -3,6 +3,7 @@ DELETE operations performed on the CUSTOMERS table. This trigger will display th
 salary difference between the old & new Salary.
 CUSTOMERS(ID,NAME,AGE,ADDRESS,SALARY)
 
+
 SQL> CREATE TABLE CUSTOMERS (
   2      ID INT PRIMARY KEY,
   3      NAME VARCHAR(100),
